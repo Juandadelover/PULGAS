@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Calendar, Phone, Star, ShieldCheck, Heart } from "lucide-react";
+import heroVideo from "/assets/hero-video.webp";
 
 const Hero = () => {
     const whatsappNumber = "573144375899";
@@ -144,9 +145,11 @@ const Hero = () => {
                         className="relative z-10 rounded-[2.5rem] overflow-hidden shadow-2xl shadow-orange-100/50 border-[6px] border-white aspect-[4/5] lg:aspect-square"
                     >
                         <img
-                            src="/assets/hero-video.webp"
+                            src={heroVideo}
                             alt="Veterinaria interactuando con mascota"
                             className="w-full h-full object-cover"
+                            loading="eager"
+                            decoding="async"
                         />
                     </motion.div>
 
